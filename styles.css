@@ -8,19 +8,29 @@ header {
     font-size: 20px
 }
 
+@font-face {
+    font-family: "Jersey"; /* Specify the font-family name */
+    src: url("Jersey25-Regular.ttf"); /* URL to the font file (TTF format) */
+  }
+
 h1 {
+    font-family: "Jersey", sans-serif;
     font-size: 18px;
     text-decoration: dashed;
 }
 h2 {
+    font-family: "Jersey", sans-serif;
     font-size: 16px;
     text-align: center;
 }
 h3 {
+    font-family: "Jersey", sans-serif;
     font-size: 14px;
 }
 
 #MeetingInformation {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     color: hsl(100, 50%, 10%);
     background-color: #4c7692;
     width: 80%;
@@ -47,17 +57,69 @@ h3 {
     width: 50%;
     margin: 10px 10px 10px 10px;
     padding: 0px 0px 20px 20px;
-
     border: 2px solid black;
 
+    position: relative;
+    bottom: 10px;
 }
+
+#Agenda:hover {
+    background-color: red;
+}
+
+@media (any-pointer: coarse) {
+    input[type="checkbox"] {
+      appearance: none;
+      width: 30px;
+      height: 30px;
+      border: 2px solid red;
+    }
+  }
 
 #Notes {
     color: color(rgb 148 191 214);
     width: 40%;
     margin: auto;
-
     border: 2px solid black;
 
 }
 
+#Notes video {
+    display: inline-block;    /* Display checkboxes inline */
+    width: 70%;
+}
+
+#Survey {
+    height: auto;
+    width: 100px;
+    max-width: 200px;
+    min-width: 60px;
+
+    position: absolute;
+    top: 350px; left: 40px;
+}
+
+#Survey:active {
+    color: purple;
+}
+
+.ArtBox {
+    display: flex;
+    justify-content: space-around; /* Align items with space around them */
+    align-items: center; /* Align items vertically centered */
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+/* Style individual elements within the ArtBox */
+.Humility, .Respect, .Trust {
+    padding: 10px;
+    border: 1px solid #333;
+}
+
+/* Apply flex-direction to change the layout direction */
+/* Horizontal layout (default): flex-direction: row; */
+/* Vertical layout: flex-direction: column; */
+.ArtBox.row {
+    flex-direction: row; /* Default: Items laid out in a row (horizontal) */
+}

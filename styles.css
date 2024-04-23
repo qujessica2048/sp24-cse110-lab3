@@ -1,125 +1,134 @@
+/* Set background color for the entire body */
 body {
-    background-color: lightblue;
+    background-color: lightblue; /* Light blue background */
 }
 
+/* Style for the header element */
 header {
-    color: rgb(255, 255, 255);
-    background-color: #4c7692;
-    font-size: 20px
+    color: rgb(255, 255, 255); /* White text color */
+    background-color: #4c7692; /* Dark blue background */
+    font-size: 20px; /* 20px font size */
 }
 
+/* Define a custom font face named "Jersey" */
 @font-face {
     font-family: "Jersey"; /* Specify the font-family name */
     src: url("Jersey25-Regular.ttf"); /* URL to the font file (TTF format) */
-  }
+}
 
+/* Styles for various heading levels */
 h1 {
-    font-family: "Jersey", sans-serif;
-    font-size: 18px;
-    text-decoration: dashed;
+    font-family: "Jersey", sans-serif; /* Use custom font with fallback to sans-serif */
+    font-size: 18px; /* 18px font size */
+    text-decoration: dashed; /* Dashed underline */
 }
+
 h2 {
-    font-family: "Jersey", sans-serif;
-    font-size: 16px;
-    text-align: center;
+    font-family: "Jersey", sans-serif; /* Use custom font with fallback to sans-serif */
+    font-size: 16px; /* 16px font size */
+    text-align: center; /* Center-align text */
 }
+
 h3 {
-    font-family: "Jersey", sans-serif;
-    font-size: 14px;
+    font-family: "Jersey", sans-serif; /* Use custom font with fallback to sans-serif */
+    font-size: 14px; /* 14px font size */
 }
 
+/* Styles for the #MeetingInformation section */
 #MeetingInformation {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    color: hsl(100, 50%, 10%);
-    background-color: #4c7692;
-    width: 80%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(4, 1fr); /* Four columns with equal width */
+    color: hsl(100, 50%, 10%); /* Dark color text */
+    background-color: #4c7692; /* Dark blue background */
+    width: 80%; /* 80% width */
+    margin: 10px; /* 10px margin */
+    padding: 10px 0; /* Vertical padding (10px top and bottom), no horizontal padding */
 
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-    border-style: dotted;
-    border-color: black;
-    border-width: 2px;
-    border-radius: 10%;
+    border-style: dotted; /* Dotted border */
+    border-color: black; /* Black border color */
+    border-width: 2px; /* 2px border width */
+    border-radius: 10%; /* 10% border radius */
 }
 
+/* Styles for the #Agenda section */
 #Agenda {
+    /* Use predefined color space or fallback to blue */
     color: color(srgb rgb(148, 191, 214) rgb(176, 242, 176) #9b9bf3);
-    color: var(--primary-color, blue);
-    background-color: color-mix(in srgb, blue 45%, white 55%);
-    width: 50%;
-    margin: 10px 10px 10px 10px;
-    padding: 0px 0px 20px 20px;
-    border: 2px solid black;
+    color: var(--primary-color, blue); /* Use primary color or fallback to blue */
+    background-color: color-mix(in srgb, blue 45%, white 55%); /* Mix blue and white colors */
+    width: 50%; /* 50% width */
+    margin: 10px; /* 10px margin */
+    padding: 0px 0px 20px 20px; /* Padding (0 top/bottom, 0 left/right, 20px bottom) */
+    border: 2px solid black; /* Black border */
 
-    position: relative;
-    bottom: 10px;
+    position: relative; /* Position relative to its normal position */
+    bottom: 10px; /* Move 10px down from its normal position */
 }
 
+/* Hover effect for #Agenda section */
 #Agenda:hover {
-    background-color: red;
+    background-color: red; /* Red background color on hover */
 }
 
+/* Media query for devices with coarse pointers (like touchscreens) */
 @media (any-pointer: coarse) {
     input[type="checkbox"] {
-      appearance: none;
-      width: 30px;
-      height: 30px;
-      border: 2px solid red;
+        appearance: none; /* Remove default checkbox appearance */
+        width: 30px; /* 30px width */
+        height: 30px; /* 30px height */
+        border: 2px solid red; /* Red border */
     }
-  }
+}
 
+/* Styles for the #Notes section */
 #Notes {
-    color: color(rgb 148 191 214);
-    width: 40%;
-    margin: auto;
-    border: 2px solid black;
-
+    color: color(rgb 148 191 214); /* Color using RGB values */
+    width: 40%; /* 40% width */
+    margin: auto; /* Center horizontally */
+    border: 2px solid black; /* Black border */
 }
 
+/* Styles for video element within #Notes section */
 #Notes video {
-    display: inline-block;    /* Display checkboxes inline */
-    width: 70%;
+    display: inline-block; /* Display inline-block */
+    width: 70%; /* 70% width */
 }
 
+/* Styles for the #Survey section */
 #Survey {
-    height: auto;
-    width: 100px;
-    max-width: 200px;
-    min-width: 60px;
+    height: auto; /* Automatic height */
+    width: 100px; /* 100px width */
+    max-width: 200px; /* Maximum width of 200px */
+    min-width: 60px; /* Minimum width of 60px */
 
-    position: absolute;
-    top: 350px; left: 40px;
+    position: absolute; /* Absolute positioning */
+    top: 350px; /* Position 350px from the top */
+    left: 40px; /* Position 40px from the left */
 }
 
+/* Active state style for #Survey section */
 #Survey:active {
-    color: purple;
+    color: purple; /* Purple color when active */
 }
 
+/* Styles for the .ArtBox container */
 .ArtBox {
-    display: flex;
+    display: flex; /* Use flex layout */
     justify-content: space-around; /* Align items with space around them */
     align-items: center; /* Align items vertically centered */
-    border: 1px solid #ccc;
-    padding: 20px;
+    border: 1px solid #ccc; /* Light border */
+    padding: 20px; /* 20px padding */
 }
 
-/* Style individual elements within the ArtBox */
+/* Styles for individual elements within .ArtBox */
 .Humility, .Respect, .Trust {
-    padding: 10px;
-    border: 1px solid #333;
+    padding: 10px; /* 10px padding */
+    border: 1px solid #333; /* Dark border */
 }
 
-/* Apply flex-direction to change the layout direction */
+/* Styles to change layout direction of .ArtBox */
 /* Horizontal layout (default): flex-direction: row; */
 /* Vertical layout: flex-direction: column; */
 .ArtBox.row {
-    flex-direction: row; /* Default: Items laid out in a row (horizontal) */
+    flex-direction: row; /* Items laid out in a row (horizontal) */
 }

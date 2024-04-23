@@ -1,0 +1,63 @@
+body {
+    background-color: lightblue;
+}
+
+header {
+    color: rgb(255, 255, 255);
+    background-color: #4c7692;
+    font-size: 20px
+}
+
+h1 {
+    font-size: 18px;
+    text-decoration: dashed;
+}
+h2 {
+    font-size: 16px;
+    text-align: center;
+}
+h3 {
+    font-size: 14px;
+}
+
+#MeetingInformation {
+    color: hsl(100, 50%, 10%);
+    background-color: #4c7692;
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border-style: dotted;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 10%;
+}
+
+#Agenda {
+    color: color(srgb rgb(148, 191, 214) rgb(176, 242, 176) #9b9bf3);
+    color: var(--primary-color, blue);
+    background-color: color-mix(in srgb, blue 45%, white 55%);
+    width: 50%;
+    margin: 10px 10px 10px 10px;
+    padding: 0px 0px 20px 20px;
+
+    border: 2px solid black;
+
+}
+
+#Notes {
+    color: color(rgb 148 191 214);
+    width: 40%;
+    margin: auto;
+
+    border: 2px solid black;
+
+}
+

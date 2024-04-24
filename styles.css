@@ -53,9 +53,9 @@ h3 {
 /* Styles for the #Agenda section */
 #Agenda {
     /* Use predefined color space or fallback to blue */
-    color: color(srgb rgb(148, 191, 214) rgb(176, 242, 176) #9b9bf3);
+    color: rgb(148, 191, 214);
     color: var(--primary-color, blue); /* Use primary color or fallback to blue */
-    background-color: color-mix(in srgb, blue 45%, white 55%); /* Mix blue and white colors */
+    background-color: mix(blue, white 55%); /* Mix blue and white colors */
     width: 50%; /* 50% width */
     margin: 10px; /* 10px margin */
     padding: 0px 0px 20px 20px; /* Padding (0 top/bottom, 0 left/right, 20px bottom) */
@@ -82,7 +82,7 @@ h3 {
 
 /* Styles for the #Notes section */
 #Notes {
-    color: color(rgb 148 191 214); /* Color using RGB values */
+    color: rgb(148, 191, 214); /* Color using RGB values */
     width: 40%; /* 40% width */
     margin: auto; /* Center horizontally */
     border: 2px solid black; /* Black border */
